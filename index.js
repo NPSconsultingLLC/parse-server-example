@@ -21,9 +21,9 @@ var api = new ParseServer({
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
   emailAdapter: SimpleMailgunAdapter({
-    apiKey: process.env.key-9323fe70755cebc399815ad63bf05ab7,
-    domain: process.env.mg.strykeout.com,
-    fromAddress: process.env.Nathan@strykeout.com
+    apiKey: key-9323fe70755cebc399815ad63bf05ab7,
+    domain:mg.strykeout.com,
+    fromAddress: Nathan@strykeout.com
   })
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
