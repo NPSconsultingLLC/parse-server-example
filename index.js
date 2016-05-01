@@ -4,7 +4,6 @@
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
-var SimpleMailgunAdapter = require('parse-server-simple-mailgun-adapter');
 
 var databaseUri = process.env.DATABASE_URI || process.env.MONGODB_URI;
 
@@ -23,7 +22,7 @@ var api = new ParseServer({
   }
   emailAdapter: SimpleMailgunAdapter({
     apiKey: 'key-9323fe70755cebc399815ad63bf05ab7',
-    domain: 'mg.strykeout.com',
+    domain: 'https://api.mailgun.net/v3/mg.strykeout.com/messages',
     fromAddress: 'Nathan@strykeout.com'
   })
 });
